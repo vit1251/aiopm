@@ -15,7 +15,7 @@ class Application(object):
         """
         self._pm = PostmarkClient(server_token=API_TOKEN)
         await self._pm.send(
-            From='noreply@bringclass.com',
+            From='no-reply@example.com',
             To='vit1251@gmail.com',
             Subject='Postmark test',
             HtmlBody='<html><body><strong>Hello</strong> dear Postmark user.</body></html>'
